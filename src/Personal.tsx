@@ -16,11 +16,6 @@ interface Props {
 }
 
 const PersonalDetail: React.FC<Props> = ({ handleNext }) => {
-  const [value, setValue] = React.useState("female");
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue((event.target as HTMLInputElement).value);
-  };
   const classes = useStyles();
   return (
     <Formik
